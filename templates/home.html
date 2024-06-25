@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: #626269;
+        }
+
+        .col-lg-4 {
+            color: #ffffff;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-center align-items-center">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid form-container">
+        <div class="col-lg-6">
+            <form action="{{ url_for('result') }}" method="post">
+                <div class="form-group row">
+                    <label for="gender" class="col-lg-4 col-md-4 col-form-label">Gender</label>
+                    <div class="col-lg-8 col-md-8">
+                        <select id="gender" name="gender" class="form-control">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="age" class="col-lg-4 col-md-4 col-form-label">Age</label>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="text" class="form-control" id="age" name="age" placeholder="Enter your Age">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="hypertension" class="col-lg-4 col-md-4 col-form-label">Hypertension</label>
+                    <div class="col-lg-8 col-md-8">
+                        <select id="hypertension" name="hypertension" class="form-control">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="heart_disease" class="col-lg-4 col-md-4 col-form-label">Heart Disease</label>
+                    <div class="col-lg-8 col-md-8">
+                        <select id="heart_disease" name="heart_disease" class="form-control">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="ever_married" class="col-lg-4 col-md-4 col-form-label">Ever Married</label>
+                    <div class="col-lg-8 col-md-8">
+                        <select id="ever_married" name="ever_married" class="form-control">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="work_type" class="col-lg-4 col-md-4 col-form-label">Work Type</label>
+                    <div class="col-lg-8 col-md-8">
+                        <select id="work_type" name="work_type" class="form-control">
+                            <option value="0">Govt Job</option>
+                            <option value="1">Never Worked</option>
+                            <option value="2">Private</option>
+                            <option value="3">Self Employed</option>
+                            <option value="4">Children</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="Residence_type" class="col-lg-4 col-md-4 col-form-label">Residence Type</label>
+                    <div class="col-lg-8 col-md-8">
+                        <select id="Residence_type" name="Residence_type" class="form-control">
+                            <option value="1">Urban</option>
+                            <option value="0">Rural</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="avg_glucose_level" class="col-lg-4 col-md-4 col-form-label">Avg Glucose Level</label>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="text" class="form-control" id="avg_glucose_level" name="avg_glucose_level"
+                            placeholder="Avg Glucose Level">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="bmi" class="col-lg-4 col-md-4 col-form-label">BMI</label>
+                    <div class="col-lg-8 col-md-8">
+                        <input type="text" class="form-control" id="bmi" name="bmi" placeholder="BMI">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="smoking_status" class="col-lg-4 col-md-4 col-form-label">Smoking Status</label>
+                    <div class="col-lg-8 col-md-8">
+                        <select id="smoking_status" name="smoking_status" class="form-control">
+                            <option value="0">Unknown</option>
+                            <option value="1">Formerly Smoked</option>
+                            <option value="2">Never Smoked</option>
+                            <option value="3">Smoked</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row justify-content-center">
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
