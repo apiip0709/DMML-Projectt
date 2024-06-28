@@ -7,7 +7,7 @@
 - Muhammad Rifky Aqid - H071211077
 
 ## Structure
-📦DMML24-ProjectTASK
+📦DMML-Projectt
  - ┣ 📂assets
  -   ┗ 📜!Screenshot 2024-06-28 101134.png
  -   ┗ 📜!Screenshot 2024-06-28 101225.png
@@ -45,7 +45,7 @@ Berikut informasi dari dataset :
 ## Menjalankan Aplikasi
 - Lakukan clone terhadap hasil fork repository ini ke komputer kalian
   ```
-  git clone https://github.com/ocaanng/DMML-Project.git
+  git clone https://github.com/apiip0709/DMML-Projectt.git
   ```
 - Buka Terminal Pada File yang sudah di clone, lalu jalankan perintah berikut:
   ```
